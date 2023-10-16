@@ -1,0 +1,10 @@
+{
+  "name": "kebab-or-snake",
+  "scripts": {
+    "test": "node src/test.mjs"
+  },
+  "packageManager": "yarn@4.0.0-rc.53",
+  "dependencies": {
+    "case-anything": "^2.1.13"
+  }
+}

@@ -1,9 +1,13 @@
 # kebab-or-snake
-The current `nest.js` default function for  nestjs `kebab-or-snake` case
+The current `nest.js` [default 
+function](https://github.com/nestjs/nest-cli/blob/812151373479088a0dce6878504efff53fc78b45/lib/utils/formatting.ts#L8) 
+for formatting strings to the `kebab-or-snake` case.
 
-- It's ambiguous in its definition: it formats to kebab case, unless it's already in snake case, 
-in which case it does nothing.
-- It does not handle special charcters well
+The function formats a string to the `kebab` case unless it already follows the `snake` convention, 
+in which case it returns the string unchanged.
+
+- Its behavior is ambiguous
+- It does not handle special characters well
 - It seems to allow filesystem escape
 
 # Run the test

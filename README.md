@@ -10,6 +10,17 @@ in which case it returns the string unchanged.
 - It does not handle special characters well
 - It seems to allow filesystem escape
 
+# Filesystem escape
+
+```bash
+nest new $test -s -c
+```
+When prompted for a name enter `$play`
+
+The files will be created one directory higher than they should. It poses minimal risk as you can't control
+the content of the files nor the position of the files, but potentioally you could overwrite an existing
+`package.json` and break someone's workflow.
+
 # Run the test
 
 First install deps with:
